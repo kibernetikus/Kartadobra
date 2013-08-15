@@ -1,0 +1,5 @@
+ <?=blocks::cards($u, TRUE)?>
+
+
+
+ 

@@ -1,0 +1,41 @@
+/**************************************************************************************************************************************************************************
+// com.oclib.css.standard.html.20070114.Html
+// Open Class Library : CSS : HTML : Version 20070114
+// Version's Location: http://www.oclib.com/css/standard/html/20070114/Html.css 
+// Index Version's Location: http://www.oclib.com/css/standard/html/20070114/index.html
+// Release's Namespace: com.oclib.css.standard.Html 
+// Release's Location: http://www.oclib.com/css/standard/Html.css 
+// © 2007 http://www.oclib.com/
+****************************************************************************************************************************************************************************/
+
+.b {
+ font-weight: bold;
+}
+
+.center, .centered {
+ text-align: center;
+}
+
+.hide, .hidden {
+ left: -1000em;
+ position: absolute;
+ top: -1000em;
+ visibility: hidden;
+}
+
+.justify {
+ text-align: justify;
+}
+
+.left {
+ text-align: left;
+}
+
+.p {
+ text-indent: 4em;
+ text-align: justify;
+}
+
+.right {
+ text-align: right;
+}

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
+
+ <head>
+  <title>Чат бот Киса : Демо бета</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="description" content="Чат бот Киса : Демо бета" />
+  <meta name="keywords" content="Чат бот Киса : Демо бета" />
+<!--#include virtual="/library/su/bot/kisa/includes/css.inc" --> 
+  <link rel="stylesheet" type="text/css" href="/library/su/bot/kisa/css/demo/builds/20070811/demo.css" />
+ </head>
+
+ <body>
+  <table class="kisaTable" align="center">
+   <tr>
+    <td colspan="4">
+<!--#include virtual="/library/su/bot/kisa/includes/top-russian.inc" --> 
+	</td>
+   </tr>
+   <tr>
+    <td>
+<!--#include virtual="/library/su/bot/kisa/includes/separator.inc" --> 
+	</td>
+    <td>
+<!--#include virtual="/library/su/bot/kisa/includes/menu-russian.inc" --> 
+<!--#include virtual="/library/su/bot/kisa/includes/menu-ads.inc" --> 
+	</td>
+    <td>
+<!--#include virtual="/library/su/bot/kisa/includes/separator.inc" --> 
+	</td>
+	<td>
+<!--#include virtual="/library/su/bot/kisa/includes/long-ads.inc" --> 
+     <div class="allBot">
+      <div id="botWindow">
+       <div id="monitor"></div>
+       <div id="userConsole">
+	    <input type="text" id="userConsoleText" size="70" maxlength="256" value="" />&nbsp;&nbsp;
+	    <input type="button" id="userConsoleSendButton" value="Сказать" />
+       </div>
+      </div> 
+<!--#include virtual="/library/su/bot/kisa/includes/long-ads.inc" --> 
+	  <div class="logWindowMessage">Тут Панда думает:</div>
+      <div id="logWindow">
+       <div id="botLog">
+	   </div>
+      </div>
+	  <div class="hidden">
+	   <input type="text" id="botBefore-en" value="&lt;Панда&gt;: " />
+	   <input type="text" id="botBefore-ru" value="&lt;Панда&gt;: " />
+	   <input type="text" id="guestBefore-en" value="Human: " />
+	   <input type="text" id="guestBefore-ru" value="Человек: " />
+	   <input type="text" id="defaultLanguage" value="ru" />
+	  </div>
+	 </div>
+	</td>
+   </tr>
+   <tr>
+    <td colspan="4">
+<!--#include virtual="/library/su/bot/kisa/includes/bottom-russian/20070223/bottom-russian.inc" --> 
+	</td>
+   </tr>
+  </table>
+  
+  <script type="text/javascript" src="/library/com/oclib/javascript/lang/Root.js"></script> 
+  <script type="text/javascript" src="/library/com/oclib/javascript/util/Dom.js"></script> 
+  <script type="text/javascript" src="/library/com/oclib/javascript/util/Events.js"></script> 
+  <script type="text/javascript" src="/library/com/oclib/javascript/util/Log.js"></script> 
+  <script type="text/javascript" src="/library/com/oclib/javascript/util/Loader.js"></script> 
+  <script type="text/javascript" src="/library/com/oclib/javascript/lang/ClassLoader.js"></script> 
+  <script type="text/javascript" src="/library/com/oclib/javascript/util/Str.js"></script> 
+  <script type="text/javascript" src="/library/su/bot/javascript/chatbot/botsmanager/BotsManager.js"></script>
+  <script type="text/javascript" src="/library/su/bot/javascript/chatbot/console/Monitor.js"></script> 
+  <script type="text/javascript" src="/library/su/bot/javascript/chatbot/console/UserConsole.js"></script>
+  <script type="text/javascript" src="/library/su/bot/javascript/chatbot/chatbots/ChatBot.js"></script>   
+  <script type="text/javascript" src="/library/su/bot/javascript/chatbot/messages/ChatBotMessage.js"></script>
+  <script type="text/javascript" src="/library/su/bot/javascript/chatbot/chatbots/LoadTab.js"></script>  
+  <script type="text/javascript" src="/library/su/bot/kisa/javascript/chatbots/LoadTab.js"></script>
+  <script type="text/javascript" src="/library/su/bot/kisa/javascript/demo.js"></script>
+<!--#include virtual="/library/su/bot/kisa/includes/counter.inc" --> 
+ </body>
+ 
+</html>

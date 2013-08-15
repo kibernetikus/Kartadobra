@@ -1,0 +1,75 @@
+body {
+ text-align: left;
+}
+
+.bot {
+ background-color: #FFFFFF;
+ color: #FF3366;
+ font-weight: bold;
+ margin-left: 1em;
+ margin-right: 1em;
+}
+
+.bot:before {
+ background-color: #FFFFFF;
+ content: "<КИСА>: ";
+ color: #FF3366;
+ font-weight: bold;
+}
+
+.guest {
+ background-color: #FFFFFF;
+ color: #000000;
+ margin-left: 1em;
+ margin-right: 1em;
+}
+
+.guest:before {
+ content: "Человек: ";
+ font-weight: bold;
+}
+
+.logWindowMessage {
+ font-weight: bold;
+ text-align: center;
+ width: 100%;
+}
+
+#botWindow {
+ background-color: #FFFFFF;
+ border: 1px solid #000000;
+ height: 300px; 
+ margin-top: 16px;
+ margin-bottom: 16px;
+ width: 548px;
+}
+
+#botLog {
+ height: 300px; 
+ overflow: auto;
+ width: auto;
+}
+
+#monitor {
+ background-color: #FFFFFF;
+ color: #000000;
+ height: 267px; 
+ margin-bottom: 5px;
+ overflow: scroll;
+ width: 548px;
+}
+
+#logWindow {
+ border: 1px solid #000000;
+ height: 300px; 
+ overflow: hidden;
+ width: 548px;
+}
+
+#userConsole {
+ background-color: #FFFFFF;
+ color: #000000;
+ height: 25px;
+ text-align: center;
+ width: 548px;
+}

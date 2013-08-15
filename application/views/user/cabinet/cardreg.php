@@ -1,0 +1,1 @@
+ <?=blocks::cardsreg($u, TRUE)?>
