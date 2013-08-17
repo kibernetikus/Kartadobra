@@ -71,5 +71,17 @@ class blocks
         $v->model = $model;
         return $v->render();
     }
+    public static function tasks($u)
+    {
+	$v = View::factory('blocks/tasks');
+	$v->tasks = ORM::factory('Task')->where('mode', '=', 0)->where('region_id', '=', $u->region_id)->where('author_id', '!=', $u->id)->order_by('id', 'desc')->limit(3)->find_all();
+	return $v->render();
+    }
+    public static function tasks_all($u)
+    {
+	$v = View::factory('blocks/tasks_all');
+	$v->tasks = ORM::factory('Task')->where('mode', '=', 0)->where('region_id', '!=', $u->region_id)->where('author_id', '!=', $u->id)->order_by('id', 'desc')->limit(3)->find_all();
+	return $v->render();
+    }
 }
 ?>
