@@ -207,7 +207,33 @@ class Controller_Ajax_User extends Controller_Template_Ajax {
         }
         $this->echo = $t->as_array();
     }
-    
+    public function action_addoffers()
+    {
+	if (empty($_POST['img']) OR empty($_POST['t'])OR empty($_POST['slc']) OR empty($_POST['c']) OR empty($_POST['txt']))
+	    exit;
+	$c = ORM::factory('City', $_POST['c']);
+	if (!$c->loaded())
+	    exit();
+	$type  = ORM::factory('Type', $_POST['slc']);
+	if (!$type->loaded())
+	    exit();
+	$t = ORM::factory('Offer');
+	$t->title = text::accepte($_POST['t'], 100);
+	$t->city_id = $c->id;
+	$t->region_id = $c->region_id;
+	$t->text = text::accepte($_POST['txt'], 5000);
+	$t->geo = empty($_POST['g']) ? '' : $_POST['g'];
+	$t->author_id = $this->u->id;
+	$t->constant = (!empty($_POST['const']) AND $this->is_org) ? 1 : 0;
+	$t->type_id = $_POST['slc'];
+	$t->save();
+	$img = explode(';', $_POST['img']);
+	foreach ($img AS $i)
+	{
+	    $t->add('medias', $i);
+	}
+	$this->echo = $t->as_array();
+    }
     public function action_addcard($id=NULL)
     {
         if(empty($_POST['id']) OR !is_numeric($_POST['id']) OR empty($_POST['c']) OR empty($_POST['t'])) exit;
