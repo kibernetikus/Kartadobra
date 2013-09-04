@@ -8,6 +8,7 @@ class Model_User extends Model_Auth_User {
             'blogs' => array(),
             'cards' => array('model' => 'Card', 'through' => 'actions'),
             'tasks' => array('foreign_key'=>'author_id'),
+	    'offers' => array('foreign_key'=>'author_id'),
             'helps' => array('model' => 'Task',  'through' => 'tasks_users', 'far_key'=>'task_id'),
             'teams' => array(),
 	);
